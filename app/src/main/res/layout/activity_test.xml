@@ -8,18 +8,18 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="304dp"
-        android:layout_height="370dp"
+        android:layout_width="324dp"
+        android:layout_height="397dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.818"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.346">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,9 +32,9 @@
                 android:id="@+id/questionOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Question One : "
+                android:text="How many hours do you sleep on average "
                 android:textAlignment="center"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <Space
@@ -73,9 +73,9 @@
                 android:id="@+id/questionTwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Question two : "
+                android:text="How much do you like your job"
                 android:textAlignment="center"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <Space
@@ -112,9 +112,9 @@
                 android:id="@+id/questionThree"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Question three :"
+                android:text="How many hours do you work  weekly"
                 android:textAlignment="center"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <Space
@@ -151,9 +151,9 @@
                 android:id="@+id/questionFour"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Question four :"
+                android:text="How good are your relationship"
                 android:textAlignment="center"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <Space
@@ -190,9 +190,9 @@
                 android:id="@+id/questionFive"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Question five : "
+                android:text="Do you have financial problems"
                 android:textAlignment="center"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
 
             <Space
