@@ -3,6 +3,7 @@ package com.rebaiahmed.firebaseauth;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
@@ -23,6 +24,7 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
         submit = (Button) findViewById(R.id.submitResults);
+        submit.setOnClickListener(this);
         valueQ1 = (TextView) findViewById(R.id.value1);
         valueQ2 = (TextView) findViewById(R.id.value2);
         valueQ3 = (TextView) findViewById(R.id.value3);
@@ -80,11 +82,12 @@ public class TestActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == submit) {
-            score = Integer.parseInt(valueQ1.getText().toString()) + Integer.parseInt(valueQ2.getText().toString()) + Integer.parseInt(valueQ3.getText().toString()) + Integer.parseInt(valueQ4.getText().toString()) + Integer.parseInt(valueQ5.getText().toString());
-            Intent resultIntent = new Intent(TestActivity.this, ResultActivity.class);
+            Log.e("Hello","I'm at submit");
+            score = seekBar1.getProgress() + seekBar2.getProgress() + seekBar3.getProgress() + seekBar4.getProgress() + seekBar5.getProgress();
+            Intent resultIntent = new Intent(getApplicationContext(), ResultActivity.class);
             resultIntent.putExtra("score", score);
             setResult(RESULT_OK, resultIntent);
-//            startActivity(resultIntent);
+            startActivityForResult(resultIntent,100);
             finish();
         }
     }
